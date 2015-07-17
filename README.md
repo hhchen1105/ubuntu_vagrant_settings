@@ -23,3 +23,6 @@ Vagrant settings
   to [project_home]/setting_files/vim_settings/auto_headers/r_header,
   edit the file to enter your name and email.
 - Change directory to the project home directory and run `vagrant up --provision`
+
+# Known issues
+- It seems Virtualbox 4.3.30 has a Shared folder Mounting bug.
