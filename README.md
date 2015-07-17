@@ -9,10 +9,7 @@ Vagrant settings
 # Installation steps
 
 - Install Virtualbox
-- Install Virtualbox extension pack
 - Install Vagrant
-- Open command prompt and execute `vagrant plugin install vagrant-vbguest` to 
-  install a vagrant plugin
 - Copy [project_home]/setting_files/git_settings/.gitconfig.sample to 
   [project_home]/setting_files/git_settings/.gitconfig, edit the file to enter 
   your git user name and email address
@@ -25,4 +22,4 @@ Vagrant settings
 - Copy [project_home]/setting_files/vim_settings/auto_headers/r_header.sample
   to [project_home]/setting_files/vim_settings/auto_headers/r_header,
   edit the file to enter your name and email.
-- Change directory to the project home directory and run `vagrant up`
+- Change directory to the project home directory and run `vagrant up --provision`
