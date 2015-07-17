@@ -1,0 +1,12 @@
+vbell off
+bell_msg 'Bell in window %n'
+startup_message off
+defscrollback 1000
+#hardstatus alwayslastline "%{wb}%C %m/%d | %{wb}%?%-Lw%?%{wr}%n%f %t%?(%u)%?%{wb}%?%+Lw%?"
+#hardstatus alwayslastline "%{cb}%-Lw%{wb}%50>%n%f* %t%{-}%+Lw%<"
+hardstatus alwayslastline "%{cb}%-Lw%{wb}%030>%n%f %t%{-}%+Lw%82<%82= | %{wb}%m/%d %C"
+# key binding
+bindkey "^[[D" prev # ctrl-left
+bindkey "^[[C" next # ctrl-right
+bindkey "\033Od" prev # ctrl-left
+bindkey "\033Oc" next # ctrl-right

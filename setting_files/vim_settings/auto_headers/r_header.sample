@@ -1,0 +1,39 @@
+:insert
+#!/usr/bin/env Rscript
+
+# YOUR-NAME <YOUR@EMAIL.ADDRESS>
+# Creation Date:
+# Last Modified:
+
+# Sample usage:
+# ...
+
+library('getopt')
+
+# column 1: long name
+# column 2: short name
+# column 3: mask (0: no arg; 1: required; 2: optional)
+# column 4: data type ("logical", "integer", "double", "complex", "character")
+# column 5 (optional): a description of the purpose of the flag
+spec = matrix(c(
+    'foo', 'f', 1, "integer", "",
+    'bar', 'b', 2, "logical", ""
+  ), byrow=T, ncol=5)
+opt = getopt(spec)
+
+CheckArgs <- function(opt) {
+  if ( is.null(opt$foo) ) {
+    cat(getopt(spec, usage=TRUE))
+    q(status=1)
+  }
+}
+
+main <- function(opt) {
+  CheckArgs(opt)
+
+  q(status=0)
+}
+
+main(opt)
+
+.
