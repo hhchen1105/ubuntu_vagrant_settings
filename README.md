@@ -10,6 +10,8 @@ Vagrant settings
 
 - Install Virtualbox
 - Install Vagrant
+- Edit [project_home]/Vagrantfile to set the memory and CPU numbers (at around
+  line 55)
 - Copy [project_home]/setting_files/git_settings/.gitconfig.sample to 
   [project_home]/setting_files/git_settings/.gitconfig, edit the file to enter 
   your git user name and email address
