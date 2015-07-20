@@ -13,8 +13,8 @@ Vagrant settings
 - Copy [project_home]/setting_files/git_settings/.gitconfig.sample to 
   [project_home]/setting_files/git_settings/.gitconfig, edit the file to enter 
   your git user name and email address
-- Copy [project_home]/setting_files/mysql_related/mysql_install.sh.sample to
-  [project_home]/setting_files/mysql_related/mysql_install.sh, edit the file
+- Copy [project_home]/mysql_related/mysql_install.sh.sample to
+  [project_home]/mysql_related/mysql_install.sh, edit the file
   to enter MySQL's root password
 - Copy [project_home]/setting_files/vim_settings/.vim/auto_headers/python_header.sample
   to [project_home]/setting_files/vim_settings/.vim/auto_headers/python_header,
