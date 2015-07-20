@@ -78,6 +78,8 @@ Vagrant.configure(2) do |config|
   config.vm.provision "file", source: "setting_files/screen_settings/.screenrc", destination: "$HOME/.screenrc"
   config.vm.provision "file", source: "setting_files/git_settings/.gitconfig", destination: "$HOME/.gitconfig"
   config.vm.provision "file", source: "setting_files/git_settings/.gitignore_global", destination: "$HOME/.gitignore_global"
+  config.vm.provision "file", source: "setting_files/vim_settings/.vimrc", destination: "$HOME/.vimrc"
+  config.vm.provision "file", source: "setting_files/vim_settings/.vim", destination: "$HOME/.vim"
   
   # install apt packages
   config.vm.provision :shell, :path => "install_packages.sh"
