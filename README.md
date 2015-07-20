@@ -3,8 +3,8 @@ Vagrant settings
 # Tested environment
 
 - Host: Windows 7, processor: Intel i7 CPU 2.67GHz, 2.79GHz, 16GB RAM
-- Virtualbox 4.3.12
-- Vagrant 1.7.2
+- Virtualbox 4.3.12 http://download.virtualbox.org/virtualbox/4.3.12/
+- Vagrant 1.7.2 http://www.vagrantup.com/download-archive/v1.7.2.html
 
 # Installation steps
 
