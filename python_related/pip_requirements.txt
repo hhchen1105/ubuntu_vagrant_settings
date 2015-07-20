@@ -41,6 +41,5 @@ cvxopt
 sklearn-pandas
 theano
 howdoi
-pymc>=2.3.4
 warctools
 service_identity
