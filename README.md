@@ -16,11 +16,11 @@ Vagrant settings
 - Copy [project_home]/setting_files/mysql_related/mysql_install.sh.sample to
   [project_home]/setting_files/mysql_related/mysql_install.sh, edit the file
   to enter MySQL's root password
-- Copy [project_home]/setting_files/vim_settings/auto_headers/python_header.sample
-  to [project_home]/setting_files/vim_settings/auto_headers/python_header,
+- Copy [project_home]/setting_files/vim_settings/.vim/auto_headers/python_header.sample
+  to [project_home]/setting_files/vim_settings/.vim/auto_headers/python_header,
   edit the file to enter your name and email.
-- Copy [project_home]/setting_files/vim_settings/auto_headers/r_header.sample
-  to [project_home]/setting_files/vim_settings/auto_headers/r_header,
+- Copy [project_home]/setting_files/vim_settings/.vim/auto_headers/r_header.sample
+  to [project_home]/setting_files/vim_settings/.vim/auto_headers/r_header,
   edit the file to enter your name and email.
 - Change directory to the project home directory and run `vagrant up --provision`
 
