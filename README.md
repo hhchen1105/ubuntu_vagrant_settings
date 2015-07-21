@@ -10,6 +10,8 @@ Vagrant settings
 
 - Install Virtualbox
 - Install Vagrant
+- Edit [project_home]/Vagrantfile to set the sync folders of host and guest
+  machine, if needed (at around line 41)
 - Edit [project_home]/Vagrantfile to set the memory and CPU numbers (at around
   line 55)
 - Copy [project_home]/setting_files/git_settings/.gitconfig.sample to 
