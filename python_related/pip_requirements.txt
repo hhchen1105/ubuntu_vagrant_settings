@@ -43,3 +43,4 @@ theano
 howdoi
 warctools
 service_identity
+libpgm
