@@ -44,3 +44,5 @@ howdoi
 warctools
 service_identity
 libpgm
+mysolr
+mmseg
