@@ -7,8 +7,8 @@ sudo apt-get update
 # install apt packages
 cat /vagrant/apt_package_to_install.list | xargs sudo apt-get install -y
 
-# install MySQL server and client
-/vagrant/mysql_related/mysql_install.sh
+# install MariaDB server and client
+/vagrant/mariadb_related/mariadb_install.sh
 
 # install RStudio and R packages
 # need to update R to newer versions before installing packages

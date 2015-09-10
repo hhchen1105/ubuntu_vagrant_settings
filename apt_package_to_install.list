@@ -44,3 +44,4 @@ libzmq-dev
 freetds-dev
 unixodbc-dev
 freetds-bin tdsodbc
+r-cran-rodbc
