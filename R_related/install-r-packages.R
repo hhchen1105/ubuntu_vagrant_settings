@@ -9,6 +9,7 @@ install.packages(c(
                    "ggplot2",
                    "lubridate",
                    "caret",
-				   "getopt"
+				   "getopt",
+                   "RMySQL"
                   ),
                    dependencies = TRUE)

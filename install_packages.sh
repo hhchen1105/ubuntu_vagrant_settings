@@ -20,7 +20,7 @@ sudo apt-get upgrade -y
 /vagrant/R_related/rstudio_node.sh
 /vagrant/R_related/r_packages.sh
 
-# install python packages
+# install Python packages
 pip install --upgrade distribute
 cat /vagrant/python_related/pip_requirements.txt | xargs sudo pip install
 
