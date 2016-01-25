@@ -47,3 +47,4 @@ libpgm
 mysolr
 mmseg
 stemming
+jupyter
