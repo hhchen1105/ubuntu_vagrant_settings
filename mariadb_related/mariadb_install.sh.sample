@@ -1,11 +1,15 @@
 #!/usr/bin/env bash
+
+if [ -f /vagrant/.vagrant/install_mariadb_done ]; then
+    echo "MariaDB already installed.  Exiting."
+    exit
+fi
  
 # Variables
 DBPASSWD=TypeYourMariaDBrootPasswordHere
 
 # apt: add mariadb sources and key
-echo "deb http://mirror.netcologne.de/mariadb/repo/5.5/ubuntu precise main" >> /etc/apt/sources.list.d/mariadb_sources.list
-echo "deb-src http://mirror.netcologne.de/mariadb/repo/5.5/ubuntu precise main" >> /etc/apt/sources.list.d/mariadb_sources.list
+sudo cp /vagrant/mariadb_related/mariadb_sources.list /etc/apt/sources.list.d/mariadb_sources.list
 
 apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 0xcbcb082a1bb943db
 apt-get update
@@ -14,4 +18,6 @@ debconf-set-selections <<< "mariadb-server-5.5 mysql-server/root_password passwo
 debconf-set-selections <<< "mariadb-server-5.5 mysql-server/root_password_again password $DBPASSWD"
 
 apt-get install -y --allow-unauthenticated mariadb-server mariadb-client > /dev/null 2>&1
+
+touch /vagrant/.vagrant/install_mariadb_done
 
