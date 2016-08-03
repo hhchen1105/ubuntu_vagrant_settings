@@ -24,27 +24,5 @@ sudo apt-get upgrade -y
 pip install --upgrade distribute
 cat /vagrant/python_related/pip_requirements.txt | xargs sudo pip install
 
-# install Vim with Lua
-sudo apt-get remove -y --purge vim vim-runtime vim-gnome vim-tiny vim-common vim-gui-common
-sudo apt-get build-dep -y vim
-sudo apt-get install -y liblua5.2-dev
-sudo ln -s /usr/include/lua5.2 /usr/include/lua
-cd /tmp
-git clone git@github.com:vim/vim.git
-cd /tmp/vim
-./configure --with-features=huge \
-    --enable-luainterp=yes \
-    --enable-perlinterp=yes \
-	--enable-pythoninterp=yes \
-	--with-python-config-dir=/usr/lib/python2.7/dist-packages \
-    --enable-rubyinterp=yes \
-	--enable-cscope \
-    --disable-netbeans \
-    --enable-multibyte \
-	--enable-largefile
-make
-sudo make install
-#sudo ln -s /usr/local/bin/vim /usr/bin/vim
-
 sudo apt-get -y autoremove
 
