@@ -25,7 +25,6 @@ python-pip
 libxml2-dev
 libxslt1-dev
 python-dev
-libmysqlclient-dev
 libatlas-base-dev
 gfortran
 swig
@@ -35,7 +34,7 @@ libxft-dev
 graphviz
 libgraphviz-dev
 pandoc
-libpng-dev
+libpng12-dev
 libjpeg8-dev
 libqt4-core
 libqt4-gui
