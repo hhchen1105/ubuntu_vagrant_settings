@@ -48,3 +48,8 @@ mysolr
 mmseg
 stemming
 jupyter
+pexpect
+backports.shutil_get_terminal_size
+pathlib2
+pickleshare
+simplegeneric
