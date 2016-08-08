@@ -2,9 +2,8 @@ Vagrant settings
 ================
 # Tested environment
 
-- Host: Windows 7, processor: Intel i7 CPU 2.67GHz, 2.79GHz, 16GB RAM
-- Virtualbox 4.3.12 http://download.virtualbox.org/virtualbox/4.3.12/
-- Vagrant 1.7.2 https://releases.hashicorp.com/vagrant/1.7.2/
+(1) Host: Windows 7, Virtualbox 4.3.12 http://download.virtualbox.org/virtualbox/4.3.12/ , Vagrant 1.7.2 https://releases.hashicorp.com/vagrant/1.7.2/
+(2) Host: Windows 7, Virtualbox 5.1.2, Vagrant 1.8.5.  To solve shared folder bug, checkout: https://github.com/mitchellh/vagrant/issues/6598
 
 # Installation steps
 
