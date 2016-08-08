@@ -38,10 +38,10 @@ Vagrant.configure(2) do |config|
   # the path on the guest to mount the folder. And the optional third
   # argument is a set of non-required options.
   # config.vm.synced_folder "../data", "/vagrant_data"
-  #config.vm.synced_folder "c:/", "/home/vagrant/host_c/"
-  #config.vm.synced_folder "d:/", "/home/vagrant/host_d/"
-  #config.vm.synced_folder "d:/proj", "/home/vagrant/proj/"
-  #config.vm.synced_folder "c:/Users/A30135/Desktop/tmp/", "/home/vagrant/host_tmp/"
+  #config.vm.synced_folder "c:\\", "/home/vagrant/host_c/"
+  #config.vm.synced_folder "d:\\", "/home/vagrant/host_d/"
+  #config.vm.synced_folder "d:\\proj", "/home/vagrant/proj/"
+  #config.vm.synced_folder "c:\\Users\A30135\Desktop\tmp\", "/home/vagrant/host_tmp/"
 
   # Provider-specific configuration so you can fine-tune various
   # backing providers for Vagrant. These expose provider-specific options.
