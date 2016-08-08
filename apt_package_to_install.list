@@ -47,3 +47,4 @@ r-cran-rodbc
 pv
 libmariadbclient-dev
 doxygen
+libopenblas-dev
