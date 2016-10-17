@@ -69,6 +69,8 @@ autocmd bufnewfile *.R exe "1," . 10 . "g/Creation Date:.*/s//Creation Date : " 
 autocmd Bufwritepre,filewritepre *.R execute "normal ma"
 autocmd Bufwritepre,filewritepre *.R exe "1," . 10 . "g/Last Modified:.*/s/Last Modified:.*/Last Modified: " .strftime("%c")
 autocmd bufwritepost,filewritepost *.R execute "normal `a"
+"HTML
+autocmd bufnewfile *.html so ~/.vim/auto_headers/html_header
 
 "[ Pydictionary plugin ]
 filetype plugin on
