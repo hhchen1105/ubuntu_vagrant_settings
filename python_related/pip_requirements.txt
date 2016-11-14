@@ -53,3 +53,4 @@ backports.shutil_get_terminal_size
 pathlib2
 pickleshare
 simplegeneric
+tpot
