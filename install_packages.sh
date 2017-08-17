@@ -26,3 +26,21 @@ cat /vagrant/python_related/pip_requirements.txt | xargs sudo pip install
 
 sudo apt-get -y autoremove
 
+# install vim-syntastic
+#  step 1: Install pathogen.vim
+mkdir -p ~/.vim/autoload ~/.vim/bundle && \
+curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+echo -e '\n"[ pathogen]' >> ~/.vimrc
+echo "execute pathogen#infect()" >> ~/.vimrc
+#  step 2: Install syntastic as a Pathogen bundle
+cd ~/.vim/bundle && \
+git clone --depth=1 https://github.com/vim-syntastic/syntastic.git
+#  step 3: add recommended vim-syntastic settings to vimrc file
+echo -e '\n"[ .vim-syntastic]' >> ~/.vimrc
+echo "set statusline+=%#warningmsg#" >> ~/.vimrc
+echo "set statusline+=%{SyntasticStatuslineFlag()}" >> ~/.vimrc
+echo "set statusline+=%*" >> ~/.vimrc
+echo "let g:syntastic_always_populate_loc_list = 1" >> ~/.vimrc
+echo "let g:syntastic_auto_loc_list = 1" >> ~/.vimrc
+echo "let g:syntastic_check_on_open = 1" >> ~/.vimrc
+echo "let g:syntastic_check_on_wq = 0" >> ~/.vimrc
