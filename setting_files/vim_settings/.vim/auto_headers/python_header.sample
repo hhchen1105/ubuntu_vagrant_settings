@@ -22,8 +22,15 @@ parser.add_argument("-v", "--verbosity", type=int, choices=[0, 1, 2], default=1,
 args = parser.parse_args()
 
 
+def check_args():
+    if args.verbosity is None:
+        print("err msg" % (args.verbosity))
+        parser.print_help()
+        sys.exit(-1)
+
+
 def main(argv):
-    pass
+    check_args()
 
 
 if __name__ == "__main__":
